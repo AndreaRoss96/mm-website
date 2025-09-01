@@ -434,6 +434,10 @@ header {
   background-image: url(../img/Home/slide_3.jpg);
 }
 
+/* .Modern-Slider .item-4 .image {
+  background-image: url(../img/Home/IMG_0990.jpg);
+} */
+
 .Modern-Slider .PrevArrow:before{content:'\f104';}
 
 .Modern-Slider .item .image {
@@ -462,6 +466,10 @@ header {
 .slick-loading .slick-slide{visibility:hidden}
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
 
+/* Works Style */
+#works .section-heading {
+  padding-left: 60px;
+}
 
 /* Featured Style */
 
@@ -738,21 +746,24 @@ header {
   padding-bottom: 80px;
 }
 
+
 #blog .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
   height: 90px;
+  display: flex; /* NUOVO */
   width: 100%;
   background-color: #eee;
   border-bottom: 10px solid #45489a;
 }
 
 #blog .tabs li {
-  display: inline-block;
+  /* display: inline-block; */
+  flex: 1; /* Distribute space evenly */
   text-align: center;
   width: 25%;
-  float: left;
+  /* float: left; */
   margin: 0;
   padding: 0;
 }
@@ -802,11 +813,13 @@ header {
 }
 
 #blog .tabgroup ul li {
-  display: inline-block;
+  /* display: inline-block; */
+  display: block; /* Change from inline-block to block */
   text-align: left;
   margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  overflow: hidden; /* Clear floats */
 }
 
 #blog .tabgroup ul li:last-child {
@@ -1026,10 +1039,9 @@ header {
     color:#FFF;
     z-index:5;
   }
-
-
-
 }
+
+
 
 @media (max-width: 690px) {
 
